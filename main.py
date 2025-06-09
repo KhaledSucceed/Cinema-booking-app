@@ -215,7 +215,12 @@ class CinemaApp:
     def __init__(self, root):
         self.root = root
         root.title("Cinema Seat Booking")
+        # Start the window maximized for better visibility
         root.geometry("1280x720")
+        try:
+            root.state("zoomed")  # Windows & some Linux distros
+        except tk.TclError:
+            root.attributes("-zoomed", True)  # Fallback for other platforms
 
         self.canvas = tk.Canvas(root, width=1280, height=720)
         self.canvas.pack()
