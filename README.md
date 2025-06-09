@@ -22,7 +22,7 @@ Run the main program using:
 python3 main.py
 ```
 
-The GUI will open a window showing the seating chart. Click seats to book or reset them. Bookings can be saved to and loaded from `bookings.json`.
+When launched, the app opens maximized for easier viewing. The GUI shows the seating chart; click seats to book or reset them. Bookings can be saved to and loaded from `bookings.json`.
 
 ## Additional Scripts
 
